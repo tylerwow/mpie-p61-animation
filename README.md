@@ -10,4 +10,6 @@ By the end of this practical, you’ll be able to bring objects and even charact
 
 In this practical, you’ll be using Maya. This is already installed for you on our lab machines. However, if you’d like to continue to work with it on your personal machine, you can get a free educational license here:
 
-[Download Maya](https://www.autodesk.com/education/edu-software/overview?sorting=featured&filters=individual)
+https://www.autodesk.com/education/edu-software/overview?sorting=featured&filters=individual
+
+You can find some assets you'll be using during this practical in this template Git repository. The best way to access these is to create a new respository from the template in your account and clone it onto the machine you're working on.
