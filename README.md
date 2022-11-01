@@ -51,10 +51,10 @@ To get started, open up the zombie.fbx file from the practical resources folder 
 
 Rigging a human character in Maya is actually quite simple – if you just want a basic human that behaves in a fairly standard way. All you need to do is follow these steps using Maya’s “Quick Rig” tool:
 
-1.	Select the mesh of the 3D character that you would like to rig (in this case the Zombie)
-2.	Choose “Skeleton >> Quick Rig” from the menu
-3.	Make sure that “one click” is selected at the top of the dialog box that appears
-4.	Press the “auto-rig” button and wait until the rigging process completes
+1. Select the mesh of the 3D character that you would like to rig (in this case the Zombie)
+2. Choose “Skeleton >> Quick Rig” from the menu
+3. Make sure that “one click” is selected at the top of the dialog box that appears
+4. Press the “auto-rig” button and wait until the rigging process completes
 
 Tip: To find the Skeleton menu you’ll need to choose “Rigging” from the drop down box at the top left of the Maya UI
 
@@ -64,8 +64,51 @@ You should also see some little red circles and squares around some of the main 
 
 Have a go at manipulating these controllers to put the character in some different poses (e.g. bending over, crouching, waving). When doing this you should notice two things that make animating characters a lot easier than it could be:
 
-•	The inverse kinematics model moves the skeleton in a way that respects the mechanical constraints of the human body (in most cases!)
-•	The controllers are hierarchical, meaning that if you, for example, move the hips, the shoulders will move too.
+- The inverse kinematics model moves the skeleton in a way that respects the mechanical constraints of the human body (in most cases!)
+- The controllers are hierarchical, meaning that if you, for example, move the hips, the shoulders will move too.
 
 At this point, save a back up of your rigged character. It’ll make it easier to create animations from scratch over the next two tasks.
+
+## Task 4: Animating Your First Idle Character
+Now we’ve got a character and we can move it around, the next thing we want to do is apply some animations to it! This can be done in Maya using the same key frame approach we used in the previous tasks, except we apply the key frames now to the controllers (i.e. little red circles and squares).
+
+In this task, you should use this approach to create an “idle animation” for the zombie. An idle animation is basically an animation that pretty much all characters have, which moves them around slightly when they’re doing nothing (i.e. being idle). People don’t ever really stand deadly still, and so applying an idle animation to your characters is essential for making them look lifelike (or whatever is the equivalent for a Zombie!).
+
+To create an idle animation, simply apply some subtle movements to some of the different parts of the body using key frame animation. You might consider:
+
+-	Making the shoulders sway left and right
+-	Rotating the head a little
+-	Moving the hands a little bit
+-	Moving the hips forward and backwards
+
+Don’t overdo these movements, or else you’ll end up with a bad dancing animation! Having said this, an idle animation for a zombie can be a bit more pronounced than for a “living” human, so be creative and see how you can make it look. 3 seconds (~120 frames) might be a good length for an idle animation.
+
+*Tip: you’ll want to make you idle animation a seamless loop. One quick way to achieve this is to put key the character in the same pose at the start and end of your animation. To do this, put the character in a pose and then press S with both 0 and 120 frames selected on the timeline.*
+
+See if you can come up with something more convincing than me – shouldn’t be difficult I’m not very good at animations!
+
+https://www.youtube.com/watch?v=UwpKw-pbeJ4
+
+## Task 5: Your First Walk Cycle
+Now we’ve done some basic animation, let’s try and create a type of animation called a walk cycle. A walk cycle animation can be run on a loop when we have a character that is walking around in Unity. 
+
+To create your walk cycle, see if you can animate a character through some of the following positions shown in these diagrams.
+
+![williams_walk](https://user-images.githubusercontent.com/2250660/199253021-aee133ef-c52f-4bd2-8d6d-09d46741d422.png)
+
+Some tips when trying to do this:
+
+-	Don’t try and create a seamless loop this time. Just try and create a single step animation that looks good. Once you’ve got one step, them you can try another.
+-	It can help to use one of the side views in Maya when doing this task. Recall, you can switch between views in Maya by pressing the spacebar when your mouse is over the scene view.
+-	You can import the image (also in resources) and make in the background of your view to trace over using “View > Image Plane > Import Image”.
+-	Animate your character such that they remain in the same position throughout (i.e. they don’t actually walk anywhere). Walking animations that do include character movement (called progressive) are also common to create, but for now let’s keep things simple. 
+
+The walk cycle that’ll come from these diagrams may look quite realistic. Can you see if you can change it to make it look more like a Zombie?
+
+The diagrams in this task are from the Animator’s Survival Kit, which is an excellent reference book should you wish to pursue character animation further. You can get it reasonably cheaply second hand on Amazon (https://www.amazon.co.uk/Animators-Survival-Kit-Richard-Williams/dp/0571238343/).
+
+## Additional Optional Tasks
+
+-	The character we used in this practical was from Adobe Mixamo (https://www.mixamo.com). This is a great resource with loads of characters, and also loads of animations you can download should you wish to not focus on animation in your own practice. Why not take a look around and see what you can find on there?
+-	In this practical, we used an existing character model. Why not see if you can model your own and rig it. 
 
