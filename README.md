@@ -34,5 +34,5 @@ Some quick tips to help you achieve this task:
 
 -	Consider animating just one of the bolts first – keep it simple
 -	You can use ‘S’ to quickly set a key on an object
--	Set the position on the timeline when you want the key to happen before you manipulate the object to the position you want to be in at that time
--	If the timeline is too long for your animation, you can change its length by clicking on the little running person in the bottom right of the UI
+-	Set the position on the timeline when you want the key to happen before you manipulate the object to the position you want to be in
+-	If the timeline is too long, you can change its length by clicking on the little running person in the bottom right of the UI
